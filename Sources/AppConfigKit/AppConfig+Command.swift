@@ -4,7 +4,7 @@ import Key
 //import DatabaseLib
 import UserDefaultSugar
 //import Logger
-import PersistenceKit
+//import PersistenceKit
 import SDUtil
 #if os(iOS)
 import UIKit
@@ -106,7 +106,7 @@ extension AppConfig {
       // Logger.info("\(Trace.trace())", tag: .system) // Log the current trace to the console
       UserDefaults.removeAll() // Remove all user defaults
       // - Fixme: ⚠️️ try to figure out why onboarding is skipped 
-      Swift.print("Persistence.isNewInstall:  \(String(describing: Persistence.isNewInstall))")
+//      Swift.print("Persistence.isNewInstall:  \(String(describing: Persistence.isNewInstall))")
 //      Swift.print("👉 PrefsStore.$shouldPresentOnboarding: \(PrefsStore.$shouldPresentOnboarding.wrappedValue)")
    }
 }

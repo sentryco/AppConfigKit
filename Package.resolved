@@ -1,24 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "filesugar",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/eonist/FileSugar.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "c2b801b6afa82283e11ba4e534d21f0e472e89c8"
-      }
-    },
-    {
-      "identity" : "jsonsugar",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/eonist/JSONSugar.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "de543ae05fe2c18a6d0a3bca1d24656703ced9cd"
-      }
-    },
-    {
       "identity" : "key",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sentryco/Key",
@@ -28,30 +10,12 @@
       }
     },
     {
-      "identity" : "persistencekit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/sentryco/PersistenceKit",
-      "state" : {
-        "branch" : "main",
-        "revision" : "e4ed58918a152ebd1368753a627c91c205b13dbd"
-      }
-    },
-    {
       "identity" : "sdutil",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sentryco/SDUtil",
       "state" : {
         "branch" : "main",
         "revision" : "96f56412c8a57ff08308bac995c174f8d2e90ff4"
-      }
-    },
-    {
-      "identity" : "secuserstore",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/sentryco/SecUserStore",
-      "state" : {
-        "branch" : "main",
-        "revision" : "5406d76a27f41741d6f48257c91ccc4df2046333"
       }
     },
     {
