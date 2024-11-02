@@ -4,7 +4,7 @@
 
 ## Description
 
-AppConfigKit is a great way to reset the app before UITests based on Process info passed from the UITest. Or retain app data when needed. 
+App Configuration Management. Allows configuration of app settings related to user data and feature visibility, supporting different modes such as debugging and production. Includes options to reset user data for testing or retain data for production use. AppConfigKit is a great way to reset the app before UITests based on Process info passed from the UITest. Or retain app data when needed. 
 
 ## Features
 
