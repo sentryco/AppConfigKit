@@ -1,3 +1,5 @@
+[![Tests](https://github.com/sentryco/AppConfigKit/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/AppConfigKit/actions/workflows/Tests.yml)
+
 # AppConfigKit
 
 > Easily retain or reset app config
