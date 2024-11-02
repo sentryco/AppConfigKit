@@ -1,23 +1,30 @@
-// swift-tools-version: 5.10
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
-    name: "AppConfigKit",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "AppConfigKit",
-            targets: ["AppConfigKit"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "AppConfigKit"),
-        .testTarget(
-            name: "AppConfigKitTests",
-            dependencies: ["AppConfigKit"]),
-    ]
+   name: "AppConfigKit",
+   platforms: [
+      .macOS(.v14), // macOS 14 and later
+      .iOS(.v17), // iOS 17 and later
+   ],
+   products: [
+      .library(
+         name: "AppConfigKit",
+         targets: ["AppConfigKit"]),
+   ],
+   dependencies: [
+      .package(url: "https://github.com/eonist/UserDefaultSugar", branch: "master"), // UserDefaultSugar package from GitHub
+      .package(url: "https://github.com/sentryco/SDUtil", branch: "main"),
+      .package(url: "https://github.com/sentryco/Key", branch: "main"),
+      .package(url: "https://github.com/sentryco/PersistenceKit", branch: "main"),
+      .package(url: "https://github.com/sentryco/SecUserStore", branch: "main"),
+   ],
+   targets: [
+      .target(
+         name: "AppConfigKit",
+         dependencies: [ "SDUtil", "UserDefaultSugar", "PersistenceKit", "SecUserStore", "Key"]), // Defines the Auth target with dependencies on DatabaseLib and UserDefaultSugar
+      .testTarget(
+         name: "AppConfigKitTests",
+         dependencies: ["AppConfigKit"]), // Defines the AuthTests target with a dependency on Auth
+   ]
 )
