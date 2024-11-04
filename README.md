@@ -1,4 +1,5 @@
 [![Tests](https://github.com/sentryco/AppConfigKit/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/AppConfigKit/actions/workflows/Tests.yml)
+[![codebeat badge](https://codebeat.co/badges/721b9659-867c-436c-8f0c-ff349ed61939)](https://codebeat.co/projects/github-com-sentryco-appconfigkit-main)
 
 # AppConfigKit
 
