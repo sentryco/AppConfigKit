@@ -9,7 +9,9 @@ import SDUtil
  */
 public struct AppConfig {
    /**
-    * - Fixme: ⚠️️ add doc
+    * The database type to use for the application
+    * - Description: This property determines which database implementation should be used by the application.
+    * - Parameter db: An optional DBKind value that specifies the database type. If nil, no database will be used.
     */
    public let db: DBKind?
    /**

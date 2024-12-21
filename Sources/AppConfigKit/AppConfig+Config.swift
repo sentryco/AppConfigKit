@@ -15,7 +15,7 @@ extension AppConfig {
     * - Fixme: ⚠️️ Use switch instead of nested if else etc, maybe yes
     * - Parameters:
     *   - resetUserData: Needs to be optional, so we can diff UITest or not
-    *   - db: - Fixme: ⚠️️ add doc
+    *   - db: The database type to use for the application. Specifies which database implementation should be used.
     */
    public static func config(resetUserData: Bool?, db: DBKind) { // - Fixme: ⚠️️ set params in func
       #if DEBUG // Simulator / UITest (Exclude from prod code)
