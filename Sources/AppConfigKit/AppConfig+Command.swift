@@ -62,7 +62,7 @@ extension AppConfig {
       // Logger.info("\(Trace.trace())", tag: .db) // Log the current trace to the console
       // do { // Clear core-data database
       guard let db: DBKind = db else { print("db not available"); return }
-      SDUtil.resetDB(db: db/*CredentialDB.sharedInstance*/)
+      try? SDUtil.resetDB(db: db/*CredentialDB.sharedInstance*/)
          // try CDUtil.destroy(config: DBModel.defaultConfig) // Reset SQLite file
          // try CDUtil.reset(config: DBModel.defaultConfig) // Alternative method to reset the database
          // try AFDB.shared.clearAll() // Alternative method to clear the database
